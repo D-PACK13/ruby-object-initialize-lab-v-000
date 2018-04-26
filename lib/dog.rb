@@ -8,8 +8,9 @@ class Dog
     if name_breed == name
       breed == "Mutt"
     else
-    @name = name
-    @breed = breed
+      @name = name
+      @breed = breed
+    end
   end
   def name
     "#{@name} #{@breed}".strip
