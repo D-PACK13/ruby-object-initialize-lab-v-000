@@ -9,6 +9,10 @@ class Dog
     @breed = breed
   end
   def name
-    "#{@name} #{@breed}".strip
+    if name = name && breed
+      "#{@name} #{@breed}".strip
+    else
+      puts "Mutt"
+    end
   end
 end
