@@ -4,6 +4,9 @@ class Dog
     @breed = breed
   end
   def name=(name_breed)
+    
+    if name_breed == name
+      breed == "Mutt"
     name, breed = name_breed.split
     @name = name
     @breed = breed
