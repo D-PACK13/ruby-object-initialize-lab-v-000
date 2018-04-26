@@ -4,18 +4,14 @@ class Dog
     @breed = breed
   end
   def name=(name_breed)
-    
+    name, breed = name_breed.split
     if name_breed == name
       breed == "Mutt"
-    name, breed = name_breed.split
+    else
     @name = name
     @breed = breed
   end
   def name
-    if name = name && breed
-      "#{@name} #{@breed}".strip
-    else
-      puts "Mutt"
-    end
+    "#{@name} #{@breed}".strip
   end
 end
